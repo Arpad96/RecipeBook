@@ -28,9 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,8 +104,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "RecipeBook:build:production",
+            "firebaseProject": "recipebook-747ae",
+            "firebaseHostingSite": "recipebook-747ae"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a763398b-7f98-45d9-a7bc-d7cdbd01a19f"
   }
 }

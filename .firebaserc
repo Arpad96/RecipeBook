@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "recipebook-747ae": {
+      "hosting": {
+        "RecipeBook": [
+          "recipebook-747ae"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "recipebook-747ae"
+  }
+}

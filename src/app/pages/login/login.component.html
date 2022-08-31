@@ -1,0 +1,24 @@
+<div class="card  mt-5" style="width: 480px; margin: auto">
+    <h3 class="card-header">Login Form</h3>
+    <div class="card body">
+        <form (ngSubmit)="login()">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" id="username" class="form-control" [(ngModel)]="username">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" class="form-control" [(ngModel)]="password">
+            </div>
+            <div class="form-check">
+                <input (change)="rememberMe()" type="checkbox" class="form-check-input" value="" id="remember">
+                <label for="remember" class="form-check-label">
+                    Remember me
+                </label>
+            </div>
+            <div class="mt-3 mb-3 d-grid gap-2">
+                <button class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
